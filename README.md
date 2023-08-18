@@ -24,4 +24,14 @@ call ddu#custom#patch_global(#{
     \     },
     \   }
     \ })
+
+" Ignore current buffer
+call ddu#custom#patch_global(#{
+    \   filterParams: #{
+    \     _: #{
+    \       ignores: '%'->bufname()->fnamemodify(':p'),
+    \       actionKey: 'path',
+    \     },
+    \   }
+    \ })
 ```

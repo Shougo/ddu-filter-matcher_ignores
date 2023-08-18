@@ -51,8 +51,9 @@ actionKey	(string)
 		Default: ""
 
                                            *ddu-matcher_ignores-param-ignores*
-ignores		(string[])
+ignores		(string[] | string)
 		The ignored values.
+		If it is string, comma separated values are used.
 
 		Default: []
 

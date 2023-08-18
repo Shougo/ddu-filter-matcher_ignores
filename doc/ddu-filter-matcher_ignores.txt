@@ -37,6 +37,16 @@ EXAMPLES                                 *ddu-filter-matcher_ignores-examples*
 	    \     },
 	    \   }
 	    \ })
+
+	" Ignore current buffer
+	call ddu#custom#patch_global(#{
+	    \   filterParams: #{
+	    \     _: #{
+	    \       ignores: '%'->bufname()->fnamemodify(':p'),
+	    \       actionKey: 'path',
+	    \     },
+	    \   }
+	    \ })
 <
 
 ==============================================================================

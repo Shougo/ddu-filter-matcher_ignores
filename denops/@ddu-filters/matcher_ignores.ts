@@ -18,7 +18,6 @@ export class Filter extends BaseFilter<Params> {
     const ignores = typeof args.filterParams.ignores === "string"
       ? args.filterParams.ignores.split(",")
       : args.filterParams.ignores;
-    console.log(ignores);
     return Promise.resolve(args.items.filter(
       (item) => {
         const attr = (item.action as Record<string, string>)[

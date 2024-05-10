@@ -1,8 +1,8 @@
 import {
   BaseFilter,
   DduItem,
-} from "https://deno.land/x/ddu_vim@v3.5.1/types.ts";
-import { Denops } from "https://deno.land/x/ddu_vim@v3.5.1/deps.ts";
+} from "https://deno.land/x/ddu_vim@v4.0.0/types.ts";
+import { Denops } from "https://deno.land/x/ddu_vim@v4.0.0/deps.ts";
 
 type Params = {
   actionKey: string;

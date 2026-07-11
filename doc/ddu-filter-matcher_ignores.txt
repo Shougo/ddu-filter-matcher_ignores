@@ -29,7 +29,7 @@ https://github.com/vim-denops/denops.vim
 
 ==============================================================================
 EXAMPLES                                 *ddu-filter-matcher_ignores-examples*
->
+>vim
 	call ddu#custom#patch_global(#{
 	    \   sourceOptions: #{
 	    \     _: #{

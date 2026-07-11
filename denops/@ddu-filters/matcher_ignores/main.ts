@@ -15,7 +15,9 @@ export class Filter extends BaseFilter<Params> {
     items: DduItem[];
   }): Promise<DduItem[]> {
     const ignores = typeof args.filterParams.ignores === "string"
-      ? args.filterParams.ignores.split(",")
+      ? args.filterParams.ignores.split(",").map(
+        (s) => s.trim(),
+      ).filter((s) => s !== "")
       : args.filterParams.ignores;
     return Promise.resolve(args.items.filter(
       (item) => {
